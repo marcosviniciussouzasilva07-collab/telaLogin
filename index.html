@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+   <link rel="stylesheet" href="./src/style.css">
+<body>
+
+  <!-- ===================================================
+       AQUI COMEÇA O HTML (o "esqueleto" da página)
+  =================================================== -->
+
+  <h1>Tela de Login</h1>
+
+  <!-- Uma caixa de seleção com duas opções -->
+  <select>
+    <option disabled selected>Escolha uma opção</option>
+    <option>Sou Usuário</option>
+    <option>Novo Usuário</option>
+  </select>
+
+  <br><br>
+
+  <!-- O formulário: tudo que o usuário vai preencher -->
+  <form class="caixa-login">
+
+    <div class="campo">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" placeholder="Digite seu e-mail" required>
+    </div>
+
+    <div class="campo">
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" placeholder="Digite sua senha" required>
+    </div>
+
+    <div class="campo">
+      <button class="botao-enviar" type="submit">Enviar</button>
+    </div>
+
+    <div class="campo" style="text-align:center;">
+      <a href="#">Esqueci / Redefinir senha</a>
+    </div>
+
+  </form>
+
+</body>
+</html>

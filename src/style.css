@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    
+    /* Imagem de fundo */
+    background-image: url("./img/Tec.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    /* Impede que a imagem distorça ao redimensionar */
+    object-fit: cover;
+}
+
+    /* Estilo do título grande no topo */
+    h1 {
+      color: white;
+    }
+
+    /* Estilo da caixinha de "selecionar opção" */
+    select {
+      padding: 8px 16px;
+      border: 1px solid rgb(127, 127, 233);
+      border-radius: 5px;
+    }
+
+    /* Essa é a "caixa de vidro" que envolve o formulário */
+    .caixa-login {
+      margin: 30px auto;         /* centraliza a caixa na tela */
+      padding: 30px;
+      width: 300px;
+
+      background-color: rgba(255, 255, 255, 0.4); /* branco meio transparente */
+      backdrop-filter: blur(10px);       /* efeito de "vidro embaçado" */
+      -webkit-backdrop-filter: blur(10px); /* mesma coisa, pro Safari entender */
+
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* sombra suave */
+    }
+
+    /* Espaço entre cada "linha" do formulário (e-mail, senha, botão...) */
+    .campo {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    label {
+      display: block;         /* faz o texto do label ficar em cima do input */
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box; /* impede que o padding "estoure" a largura */
+    }
+
+    /* Estilo do botão Enviar */
+    .botao-enviar {
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(0, 102, 255);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer; /* mostra a "mãozinha" ao passar o mouse */
+    }
+
+    /* Quando o mouse passa por CIMA do botão, ele muda de cor */
+    .botao-enviar:hover {
+      background-color: rgb(230, 12, 5);
+    }
